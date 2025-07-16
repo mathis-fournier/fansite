@@ -1,6 +1,20 @@
+@font-face { 
+    font-family: customfont;
+  src: url(Heart\ Breaking\ Bad.otf);
+}
+
+*
+{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .accueil {
   float: right;
   width: 30%;
+}
+.accueil2 {
+  float: left;
+  width: 60%;
+  padding-right: 5%;
 }
 html {
   height: 100%;
@@ -22,7 +36,11 @@ header, footer {
   padding: 1em;
   text-align: center;
 }
-
+h1 {
+  font-family: customfont;
+  color: green;
+  font-size: 4em;
+}
 footer {
 display: table-row;
 position: absolute;
@@ -64,7 +82,8 @@ img {
 /* MEDIA QUERIES */
 
 
-@media (max-width: 600px) {
+@media (max-width: 600px) 
+{
   nav ul {
     display: flex;
     flex-direction: column;
@@ -79,26 +98,51 @@ img {
     text-align: center;
   }
 
-p
-{
-    column-count: 2;
-    column-rule: 1px solid lightblue;
-};
-
-
-
-  form input, form textarea {
-    width: 100%;
+  h1 {
+      font-size: 2em;
   }
+    .accueil {
+    float: none;
+    column-count: 1;
+    column-rule: 1px solid lightblue;
+    width: 100%;
+}
+    .accueil2 {
+    float: none;
+    column-count: 1;
+    column-rule: 1px solid lightblue;
+    width: 100%;
+    padding-bottom: 10em;
+}
 }
 
+
+
+
+
+
+
 /* Moyens écrans (tablettes) - entre 601px et 1024px */
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 824px) 
+{
   nav ul {
     display: flex;
     justify-content: space-around;
   }
 
+    .accueil {
+    float: none;
+    column-count: 1;
+    column-rule: 1px solid lightblue;
+    width: 100%;
+}
+
+    .accueil2 {
+    float: none;
+    column-count: 1;
+    column-rule: 1px solid lightblue;
+    width: 100%;
+}
   nav li {
     margin: 0.5em;
   }
@@ -106,16 +150,8 @@ p
   form input, form textarea {
     width: 100%;
   }
+
 }
 
-/* Grands écrans (ordinateurs de bureau) - 1025px et + */
-@media (min-width: 1025px) {
-  main {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
 
-  form input, form textarea {
-    width: 60%;
-  }
-}
+
