@@ -7,11 +7,11 @@
 {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.accueil {
+#accueil {
   float: right;
   width: 30%;
 }
-.accueil2 {
+#accueil2 {
   float: left;
   width: 60%;
   padding-right: 5%;
@@ -93,6 +93,7 @@ img {
   nav li {
     margin: 0.5em 0;
   }
+
 body {
   padding-bottom: 15em;
 }
@@ -103,13 +104,13 @@ body {
   h1 {
       font-size: 2em;
   }
-    .accueil {
+    #accueil {
     float: none;
     column-count: 1;
     column-rule: 1px solid lightblue;
     width: 100%;
 }
-    .accueil2 {
+    #accueil2 {
     float: none;
     column-count: 1;
     column-rule: 1px solid lightblue;
@@ -132,14 +133,14 @@ body {
     justify-content: space-around;
   }
 
-    .accueil {
+    #accueil {
     float: none;
     column-count: 1;
     column-rule: 1px solid lightblue;
     width: 100%;
 }
 
-    .accueil2 {
+    #accueil2 {
     float: none;
     column-count: 1;
     column-rule: 1px solid lightblue;
@@ -148,10 +149,8 @@ body {
   nav li {
     margin: 0.5em;
   }
+  
 
-  form input, form textarea {
-    width: 100%;
-  }
 
 }
 
