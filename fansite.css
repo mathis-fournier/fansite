@@ -121,8 +121,18 @@ body {
 }
 }
 
+/* page saison */
+.imgsaison{
+max-width: 400px;
+max-height: 200px;
+float:right;
+padding-left: 10px;
+vertical-align: top;
+}
+.divsaison{
+  display: flex;
 
-
+}
 
 
 
