@@ -1,13 +1,8 @@
-@font-face { 
-    font-family: customfont;
 @font-face {
   font-family: customfont;
   src: url(Heart\ Breaking\ Bad.otf);
 }
 
-*
-{
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 * {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -32,13 +27,10 @@ body {
   position: relative;
   font-family: Arial, sans-serif;
   margin: 0;
-  padding-bottom: 15%;
   height: 100%;
   width: 100%;
 }
 
-header, footer {
-  
 header,
 footer {
   background-color: #222;
@@ -50,13 +42,6 @@ h1 {
   font-family: customfont;
   color: green;
   font-size: 4em;
-}
-footer {
-display: table-row;
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
 }
 
 nav ul {
@@ -87,17 +72,12 @@ img {
   height: 100%;
   margin-bottom: 1em;
 }
-
-
 .acteurs {
   display: grid;
   grid-template-columns: 1fr;
 }
 /* MEDIA QUERIES */
 
-
-@media (max-width: 600px) 
-{
 @media (max-width: 600px) {
   nav ul {
     display: flex;
@@ -122,7 +102,6 @@ body {
   }
 
   h1 {
-      font-size: 2em;
     font-size: 2em;
   }
 <<<<<<< HEAD
@@ -170,8 +149,6 @@ vertical-align: top;
 >>>>>>> acteurs
 
 /* Moyens écrans (tablettes) - entre 601px et 1024px */
-@media (min-width: 601px) and (max-width: 824px) 
-{
 @media (min-width: 601px) and (max-width: 824px) {
   nav ul {
     display: flex;
@@ -187,7 +164,6 @@ vertical-align: top;
     column-count: 1;
     column-rule: 1px solid lightblue;
     width: 100%;
-}
   }
 
 <<<<<<< HEAD
@@ -199,7 +175,6 @@ vertical-align: top;
     column-count: 1;
     column-rule: 1px solid lightblue;
     width: 100%;
-}
   }
   nav li {
     margin: 0.5em;
@@ -218,8 +193,6 @@ vertical-align: top;
   }
 >>>>>>> acteurs
 }
-
-
 
 @media (min-width: 993px) {
   .acteurs {
