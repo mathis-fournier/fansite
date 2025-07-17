@@ -1,11 +1,17 @@
 @font-face { 
     font-family: customfont;
+@font-face {
+  font-family: customfont;
   src: url(Heart\ Breaking\ Bad.otf);
 }
 
 *
 {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 
@@ -33,6 +39,8 @@ body {
 
 header, footer {
   
+header,
+footer {
   background-color: #222;
   color: white;
   padding: 1em;
@@ -81,11 +89,16 @@ img {
 }
 
 
+.acteurs {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 /* MEDIA QUERIES */
 
 
 @media (max-width: 600px) 
 {
+@media (max-width: 600px) {
   nav ul {
     display: flex;
     flex-direction: column;
@@ -96,29 +109,46 @@ img {
     margin: 0.5em 0;
   }
 
+<<<<<<< HEAD
 body {
   padding-bottom: 15em;
 }
   header, footer {
+=======
+  header,
+  footer {
+>>>>>>> acteurs
     text-align: center;
   }
 
   h1 {
       font-size: 2em;
+    font-size: 2em;
   }
+<<<<<<< HEAD
     #accueil {
+=======
+  .accueil {
+>>>>>>> acteurs
     float: none;
     column-count: 1;
     column-rule: 1px solid lightblue;
     width: 100%;
+<<<<<<< HEAD
 }
     #accueil2 {
+=======
+  }
+  .accueil2 {
+>>>>>>> acteurs
     float: none;
     column-count: 1;
     column-rule: 1px solid lightblue;
     width: 100%;
     padding-bottom: 10em;
+  }
 }
+<<<<<<< HEAD
 }
 
 /* page saison */
@@ -136,35 +166,63 @@ vertical-align: top;
 
 
 
+=======
+>>>>>>> acteurs
 
 /* Moyens écrans (tablettes) - entre 601px et 1024px */
 @media (min-width: 601px) and (max-width: 824px) 
 {
+@media (min-width: 601px) and (max-width: 824px) {
   nav ul {
     display: flex;
     justify-content: space-around;
   }
 
+<<<<<<< HEAD
     #accueil {
+=======
+  .accueil {
+>>>>>>> acteurs
     float: none;
     column-count: 1;
     column-rule: 1px solid lightblue;
     width: 100%;
 }
+  }
 
+<<<<<<< HEAD
     #accueil2 {
+=======
+  .accueil2 {
+>>>>>>> acteurs
     float: none;
     column-count: 1;
     column-rule: 1px solid lightblue;
     width: 100%;
 }
+  }
   nav li {
     margin: 0.5em;
   }
   
 
+<<<<<<< HEAD
 
+=======
+  form input,
+  form textarea {
+    width: 100%;
+  }
+  .acteurs {
+    grid-template-columns: repeat(2 , 1fr);
+  }
+>>>>>>> acteurs
 }
 
 
 
+@media (min-width: 993px) {
+  .acteurs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
