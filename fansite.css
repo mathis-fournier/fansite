@@ -9,7 +9,6 @@
   box-sizing: border-box;
 }
 
-
 #accueil {
   float: right;
   width: 30%;
@@ -89,37 +88,24 @@ img {
     margin: 0.5em 0;
   }
 
-<<<<<<< HEAD
-body {
-  padding-bottom: 15em;
-}
-  header, footer {
-=======
+  body {
+    padding-bottom: 15em;
+  }
   header,
   footer {
->>>>>>> acteurs
     text-align: center;
   }
 
   h1 {
     font-size: 2em;
   }
-<<<<<<< HEAD
-    #accueil {
-=======
   .accueil {
->>>>>>> acteurs
     float: none;
     column-count: 1;
     column-rule: 1px solid lightblue;
     width: 100%;
-<<<<<<< HEAD
-}
-    #accueil2 {
-=======
   }
   .accueil2 {
->>>>>>> acteurs
     float: none;
     column-count: 1;
     column-rule: 1px solid lightblue;
@@ -127,26 +113,6 @@ body {
     padding-bottom: 10em;
   }
 }
-<<<<<<< HEAD
-}
-
-/* page saison */
-.imgsaison{
-max-width: 400px;
-max-height: 200px;
-float:right;
-padding-left: 10px;
-vertical-align: top;
-}
-.divsaison{
-  display: flex;
-
-}
-
-
-
-=======
->>>>>>> acteurs
 
 /* Moyens écrans (tablettes) - entre 601px et 1024px */
 @media (min-width: 601px) and (max-width: 824px) {
@@ -155,22 +121,14 @@ vertical-align: top;
     justify-content: space-around;
   }
 
-<<<<<<< HEAD
-    #accueil {
-=======
   .accueil {
->>>>>>> acteurs
     float: none;
     column-count: 1;
     column-rule: 1px solid lightblue;
     width: 100%;
   }
 
-<<<<<<< HEAD
-    #accueil2 {
-=======
   .accueil2 {
->>>>>>> acteurs
     float: none;
     column-count: 1;
     column-rule: 1px solid lightblue;
@@ -179,19 +137,14 @@ vertical-align: top;
   nav li {
     margin: 0.5em;
   }
-  
 
-<<<<<<< HEAD
-
-=======
   form input,
   form textarea {
     width: 100%;
   }
   .acteurs {
-    grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
->>>>>>> acteurs
 }
 
 @media (min-width: 993px) {
