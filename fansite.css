@@ -89,10 +89,18 @@ img {
     margin: 0.5em 0;
   }
 
+<<<<<<< HEAD
 body {
   padding-bottom: 15em;
 }
   header, footer {
+=======
+  body {
+    padding-bottom: 15em;
+  }
+  header,
+  footer {
+>>>>>>> f4ff09f7e1190be382671803d933387022c92da8
     text-align: center;
   }
 
@@ -145,6 +153,7 @@ body {
   }
   .acteurs {
     grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
