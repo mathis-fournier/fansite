@@ -1,11 +1,12 @@
-@font-face { 
-    font-family: customfont;
+@font-face {
+  font-family: customfont;
   src: url(Heart\ Breaking\ Bad.otf);
 }
 
-*
-{
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  box-sizing: border-box;
 }
 .accueil {
   float: right;
@@ -24,13 +25,12 @@ body {
   position: relative;
   font-family: Arial, sans-serif;
   margin: 0;
-  padding-bottom: 15%;
   height: 100%;
   width: 100%;
 }
 
-header, footer {
-  
+header,
+footer {
   background-color: #222;
   color: white;
   padding: 1em;
@@ -40,13 +40,6 @@ h1 {
   font-family: customfont;
   color: green;
   font-size: 4em;
-}
-footer {
-display: table-row;
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
 }
 
 nav ul {
@@ -77,13 +70,13 @@ img {
   height: 100%;
   margin-bottom: 1em;
 }
-
-
+.acteurs {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 /* MEDIA QUERIES */
 
-
-@media (max-width: 600px) 
-{
+@media (max-width: 600px) {
   nav ul {
     display: flex;
     flex-direction: column;
@@ -94,64 +87,64 @@ img {
     margin: 0.5em 0;
   }
 
-  header, footer {
+  header,
+  footer {
     text-align: center;
   }
 
   h1 {
-      font-size: 2em;
+    font-size: 2em;
   }
-    .accueil {
+  .accueil {
     float: none;
     column-count: 1;
     column-rule: 1px solid lightblue;
     width: 100%;
-}
-    .accueil2 {
+  }
+  .accueil2 {
     float: none;
     column-count: 1;
     column-rule: 1px solid lightblue;
     width: 100%;
     padding-bottom: 10em;
+  }
 }
-}
-
-
-
-
-
-
 
 /* Moyens écrans (tablettes) - entre 601px et 1024px */
-@media (min-width: 601px) and (max-width: 824px) 
-{
+@media (min-width: 601px) and (max-width: 824px) {
   nav ul {
     display: flex;
     justify-content: space-around;
   }
 
-    .accueil {
+  .accueil {
     float: none;
     column-count: 1;
     column-rule: 1px solid lightblue;
     width: 100%;
-}
+  }
 
-    .accueil2 {
+  .accueil2 {
     float: none;
     column-count: 1;
     column-rule: 1px solid lightblue;
     width: 100%;
-}
+  }
   nav li {
     margin: 0.5em;
   }
 
-  form input, form textarea {
+  form input,
+  form textarea {
     width: 100%;
   }
-
+  .acteurs {
+    grid-template-columns: repeat(2 , 1fr);
+  }
 }
 
-
-
+@media (min-width: 993px) {
+  .acteurs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
